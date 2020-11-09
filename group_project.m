@@ -1,4 +1,3 @@
 clear all
-a = 5
-b = 7
-
+rng(2020) % Fix the random seed
+price = 
