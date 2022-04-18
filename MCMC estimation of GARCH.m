@@ -35,8 +35,8 @@ n = 1;
 
 %% =====================Run MCMC===========================================
 while n < N
-    Sigma = 0.01*eye(dim);
-    epsilon = mvnrnd(zeros(dim,1),Sigma);
+    Sigma = 0.01*eye(dim);#eye函数表示返回单位矩阵
+    epsilon = mvnrnd(zeros(dim,1),Sigma);#生成多元正态随机数 
     proposal = markov_chain(n,:)+epsilon;
     
     %cal k(proposal)
